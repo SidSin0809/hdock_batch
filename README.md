@@ -64,3 +64,5 @@ Docking reports – HDOCK itself hosts your result URLs; the script merely captu
 | `RuntimeError: File did not attach…`            | Wrong path in CSV                                                                                                                                                                                   | Check file path; use absolute or relative to script                         |
 | `submission_failed` in log yet result URL works | HDOCK sometimes returns a URL without `token=`; script falls back to last path element for token. If that element is shorter than 8 chars the `ok` flag stays *False* – but the URL is still valid. |                                                                             |
 | Playwright timeouts                             | Slow network / server busy                                                                                                                                                                          | Increase browser timeout by editing the `page.goto` line, or lower `--jobs` |
+
+[![DOI](https://zenodo.org/badge/993783900.svg)](https://doi.org/10.5281/zenodo.17038560)
